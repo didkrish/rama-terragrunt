@@ -23,6 +23,6 @@ jobs:
       - run: terragrunt --version
       
       #terragrunt plan apply
-      - run: az login -u ramakrishna.diddele@thinkartha.com -p Bani.d@1234
+      - run: az login -u
       - run: git clone https://github.com/didkrish/terragrunt-azure-example.git
       - run: cd terragrunt-azure-example/vs-enterprise/staging/global/resource_groups && terragrunt init && terragrunt validate && terragrunt plan && terragrunt apply -auto-approve
